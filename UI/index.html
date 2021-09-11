@@ -1,0 +1,234 @@
+<head>
+  <link href="./css/style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+  <form action="" class="form">
+    <p class="field required">
+      <label class="label required" for="name">Full name</label>
+      <input
+        class="text-input"
+        id="name"
+        name="name"
+        required
+        type="text"
+        value="Use Tab"
+      />
+    </p>
+    <p class="field required half">
+      <label class="label" for="email">E-mail</label>
+      <input class="text-input" id="email" name="email" required type="email" />
+    </p>
+    <p class="field half">
+      <label class="label" for="phone">Phone</label>
+      <input class="text-input" id="phone" name="phone" type="phone" />
+    </p>
+  </form>
+
+  <form action="/predict" method="post" class="form">
+    <div class="field">
+      <label class="label">Number of failures in past ?</label>
+      <ul class="options">
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-0"
+            name="1"
+            type="radio"
+            value="0"
+          />
+          <label class="option-label" for="choice-0">None (0)</label>
+        </li>
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-1"
+            name="1"
+            type="radio"
+            value="1"
+          />
+          <label class="option-label" for="choice-1">One</label>
+        </li>
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-2"
+            name="1"
+            type="radio"
+            value="2"
+          />
+          <label class="option-label" for="choice-2">Two</label>
+        </li>
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-3"
+            name="1"
+            type="radio"
+            value="3"
+          />
+          <label class="option-label" for="choice-3">Three</label>
+        </li>
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-4"
+            name="1"
+            type="radio"
+            value="4"
+          />
+          <label class="option-label" for="choice-4">Greater than three</label>
+        </li>
+      </ul>
+    </div>
+    <div class="field">
+      <label class="label">Alcohol consumption. </label>
+      <ul class="options">
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-10"
+            name="2"
+            type="radio"
+            value="1"
+          />
+          <label class="option-label" for="choice-10">Never</label>
+        </li>
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-11"
+            name="2"
+            type="radio"
+            value="2"
+          />
+          <label class="option-label" for="choice-11">Very rarely</label>
+        </li>
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-12"
+            name="2"
+            type="radio"
+            value="3"
+          />
+          <label class="option-label" for="choice-12">Occasionaly</label>
+        </li>
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-13"
+            name="2"
+            type="radio"
+            value="4"
+          />
+          <label class="option-label" for="choice-13">Often</label>
+        </li>
+        <li class="option">
+          <input
+            class="option-input"
+            id="choice-14"
+            name="2"
+            type="radio"
+            value="5"
+          />
+          <label class="option-label" for="choice-14">Very frequently</label>
+        </li>
+      </ul>
+    </div>
+
+    <p class="field full">
+      <label class="label required" for="name">Absences (0-93)</label>
+      <input
+        class="text-input"
+        id="name"
+        name="3"
+        required
+        type="number"
+        value="0"
+        min="0"
+        max="93"
+      />
+    </p>
+    <p class="field full">
+      <label class="label required" for="name">First Period Grade</label>
+      <input
+        class="text-input"
+        id="name"
+        name="4"
+        required
+        type="number"
+        value="0"
+        min="0"
+        max="20"
+      />
+    </p>
+    <p class="field full">
+      <label class="label required" for="name">Second Period Grade</label>
+      <input
+        class="text-input"
+        id="name"
+        name="5"
+        required
+        type="number"
+        value="0"
+        min="0"
+        max="20"
+      />
+    </p>
+    <div class='field'>
+        <label class='label'>Internet access at home.</label>
+        <ul class='checkboxes'>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-0' name='6' type='checkbox' value='1'>
+            <label class='checkbox-label' for='choice-0'>Yes</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-1' name='6' type='checkbox' value='0'>
+            <label class='checkbox-label' for='choice-1'>No</label>
+          </li>
+        </ul>
+      </div>
+      <div class='field'>
+        <label class='label'>Extra educational support.</label>
+        <ul class='checkboxes'>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-0' name='7' type='checkbox' value='1'>
+            <label class='checkbox-label' for='choice-0'>Yes</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-1' name='7' type='checkbox' value='0'>
+            <label class='checkbox-label' for='choice-1'>No</label>
+          </li>
+        </ul>
+      </div>
+      <div class='field'>
+        <label class='label'>Desire of higher education</label>
+        <ul class='checkboxes'>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-0' name='8' type='checkbox' value='0'>
+            <label class='checkbox-label' for='choice-0'>Yes</label>
+          </li>
+          <li class='checkbox'>
+            <input class='checkbox-input' id='choice-1' name='8' type='checkbox' value='1'>
+            <label class='checkbox-label' for='choice-1'>No</label>
+          </li>
+        </ul>
+      </div>
+  
+    <!-- <p class="field half">
+      <label class="label" for="select">Position</label>
+      <select class="select" id="select">
+        <option selected value=""></option>
+        <option value="ceo">CEO</option>
+        <option value="front-end">Front-end developer</option>
+        <option value="back-end">Back-end developer</option>
+      </select>
+    </p> -->
+    <p class="field half">
+      <input class="button" type="submit" value="Send" />
+    </p>
+</form>
+ <br>
+        {{pred}}<br>
+  <script src="js/script.js"></script>
+</body>
