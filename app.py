@@ -23,10 +23,11 @@ def predict():
     print(prediction)
     output='{0:.{1}f}'.format(prediction[0][1], 2)
     print(output)
+    output_num = float(output) * 100
     if output>str(0.5):
-        return render_template('index.html',pred='Probability of getting placed {}'.format(output))
+        return render_template('index.html',pred='Probability of getting placed {} %'.format(str(output_num)))
     else:
-        return render_template('index.html',pred='Probability of getting placed {}'.format(output))
+        return render_template('index.html',pred='Probability of getting placed {} %'.format(str(output_num)))
 
 
 if __name__ == '__main__':
