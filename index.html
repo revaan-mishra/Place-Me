@@ -83,53 +83,7 @@
         </section>
       </div>
 
-      <div class="box container">
-        <h3>Please Enter Your Personal Information</h3>
-
-        <form method="post" class="form">
-          <div class="row">
-            <div class="col-6 col-12-mobilep">
-              <label for="name"> First Name</label>
-              <input
-                class="text"
-                type="text"
-                name="fname"
-                id="name"
-                value=""
-                placeholder="First Name"
-              />
-            </div>
-            <div class="col-6 col-12-mobilep">
-              <label for="name"> Last Name</label>
-              <input
-                class="text"
-                type="text"
-                name="lname"
-                id="name"
-                value=""
-                placeholder="Last Name"
-              />
-            </div>
-            <div class="col-6 col-12-mobilep">
-              <label for="email">Email</label>
-              <input
-                class="text"
-                type="text"
-                name="email"
-                id="email"
-                value=""
-                placeholder="Your Email ID"
-              />
-            </div>
-          </div>
-          <br />
-          <div class="col-12">
-            <ul class="actions special">
-              <li><input type="submit" value="Submit" /></li>
-            </ul>
-          </div>
-        </form>
-      </div>
+      
 
       <!-- <div class="col-12">
 									<label for="subject">Subject</label>
@@ -147,6 +101,7 @@
 
       <div class="box container">
         <h3>Please Enter Your Details</h3>
+        <br>
         <form method="post" action="/predict" class="form">
           <div class="col-6 col-12-mobilep">
             <label for="name">Mothers Education Level</label>
@@ -162,96 +117,81 @@
           <br />
           <div class="row">
             <div class="col-6 col-12-mobilep">
-              <label for="name">Failures - number of past class failures</label>
-              <input
-                class="text"
-                type="text"
-                name="2"
-                id="name"
-                placeholder="n if 1 <=n < 3, else 4"
-              />
+              <label for="name">Number of Current Backlogs</label>
+              <select id="cars" name="2" class="form-control" >
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">Greater than 3</option>
+              </select>
             </div>
+            
             <br />
             <div class="col-6 col-12-mobilep">
-              <label for="name"> Absences - number of school absences</label>
-              <input
-                class="text"
-                type="text"
-                name="3"
-                id="name"
-                placeholder="from 0 to 93"
-              />
+              <label for="name"> How frequently do you miss classes ?  </label>
+              <select id="cars" name="3" class="form-control" >
+                <option value="0">Never</option>
+                <option value="7">Rarely</option>
+                <option value="15">Sometimes</option>
+                <option value="25">Often</option>
+                <option value="35">Quite Frequently</option>
+              </select>
             </div>
+            
             <br />
             <div class="col-6 col-12-mobilep">
-              <label for="email">Term1 Score</label>
+              <label for="email">Cumulative GPA (CGPA)</label>
               <input
                 class="text"
                 type="text"
                 name="4"
                 id="t1s"
-                placeholder="Your Term 1 Score(0 to 20)"
+                placeholder="Enter your CGPA"
               />
             </div>
             <br />
             <div class="col-6 col-12-mobilep">
-              <label for="email">Term2 Score</label>
+              <label for="email">GPA of Previous Semester</label>
               <input
                 class="text"
                 type="text"
                 name="5"
                 id="t2s"
-                placeholder="Your Term 2 Score(0 to 20)"
-              />
+                placeholder="Enter the GPA of Previous Semester"
+              >
             </div>
             <br />
             <div class="col-6 col-12-mobilep">
-              <label for="email">Whether Father is a Teacher</label>
-              <input
-                class="text"
-                type="text"
-                name="6"
-                id="internet"
-                placeholder="(binary: 1 or 0)"
-              />
-            </div>
+              <label for="email">Is your Father an Educator (Teacher/Professor) by profession ?</label>
+              <select id="cars" name="6" class="form-control" >
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+                </select>
+            </div>  
             <br />
+            
             <div class="col-6 col-12-mobilep">
-              <label for="email">Extra educational support</label>
-              <input
-                class="text"
-                type="text"
-                name="7"
-                id="edu"
-                placeholder=" (binary: 1 or 0)"
-              />
+              <label for="email">Any Extra educational support from Your Institution ?</label>
+              <select id="cars" name="7" class="form-control" >
+                <option value="0">No</option>
+                <option value="1">Yes</option></select>
+            </div>
+          
             </div>
             <br />
-          </div>
-          <br />
+        
           <div class="col-6 col-12-mobilep">
-            <label for="name">Desire For Higher Education </label>
+            <label for="name">Are you planning on pursuing any Higher Education ?</label>
             <select id="cars" name="8" class="form-control">
               <option value="0">Yes</option>
 
               <option value="1">No</option>
             </select>
           </div>
+          
 
-          <!-- <div class="col-12">
-								<label for="subject">Subject</label>
-								<input class="text" type="text" name="subject" id="subject" value="" placeholder="Enter your subject" />
-							</div>
-							<div class="col-12">
-								<label for="subject">Message</label>
-								<textarea name="message" id="message" placeholder="Enter your message" rows="6"></textarea>
-							</div> -->
-          <!-- <div class="col-12">
-								<ul class="actions special">
-									<li><button type="submit" >Predict Probability</button></li>
-									<li><input type="reset" value="Reset" class="alt" /></li>
-								</ul>
-							</div> -->
+      
 
           <br />
           <div class="col-12">
